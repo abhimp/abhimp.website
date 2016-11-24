@@ -39,7 +39,7 @@ header#main a {
 .separator {
     overflow: hidden;
     position: absolute;
-    width: 80%;
+    width: 800px;
     padding: 0;
     margin: 0;
     margin-top: 125px;
@@ -49,10 +49,7 @@ header, nav, section, footer {
     margin: 10px auto;
 }
 header, section, footer {
-    width: 80%;
-}
-section header {
-  width: 100%;
+    width: 800px;
 }
 header, article, footer {
     color: #aaa;
@@ -167,7 +164,7 @@ header h2 {
     margin-left: 40px;
 }
 section p, section ul, section h3, #share, .comment{
-    margin: 20px auto 50px 200px;
+    margin: 20px auto 20px 200px;
     line-height: 1.7em;
 }
 section p, section ul, footer p {
@@ -186,10 +183,10 @@ section p, section ul {
     text-align: justify;
 }
 section ul {
-    width: 70%;
+    width: 480px;
 }
 section p, #share, .comment {
-    width: 80%;
+    width: 520px;
 }
 section a:visited, section a, footer a {
     color: #eee;
