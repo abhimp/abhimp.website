@@ -118,7 +118,7 @@ p::selection, a::selection, ul::selection, li::selection, pre::selection, strong
     background-color: #ddd;
     color: #000;
 }
- p::-moz-selection,  a::-moz-selection, ul::-moz-selection,  li::-moz-selection, pre::-moz-selection, strong::-moz-selection, header::-moz-selection,  h2::-moz-selection, span::-moz-selection {
+p::-moz-selection,  a::-moz-selection, ul::-moz-selection,  li::-moz-selection, pre::-moz-selection, strong::-moz-selection, header::-moz-selection,  h2::-moz-selection, span::-moz-selection {
     background-color: #ddd;
     color: #000;
 }
@@ -421,4 +421,17 @@ span.tab {
 span.pretab {
     width: 90px;
     display: inline-table;
+}
+
+td.tag {
+    text-align: left;
+    vertical-align: top;
+}
+td.desc {
+    text-align: left;
+    vertical-align: top;
+}
+article table{
+    width: 600px;
+    margin: auto;
 }
