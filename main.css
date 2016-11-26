@@ -162,7 +162,7 @@ header h2 {
     margin-left: 40px;
 }
 section p, section ul, section h3, #share, .comment{
-    margin: 20px auto;
+    margin: auto;
     line-height: 1.7em;
 }
 section p, section ul, footer p, section pre  {
@@ -185,6 +185,7 @@ section ul {
 }
 section p, #share, .comment, section pre  {
     width: 600px;
+    font-size: 17px;
 }
 section a:visited, section a, footer a {
     color: #eee;
@@ -395,4 +396,16 @@ body .ui-widget {
 #wild ul ul {
     padding: 0;
     margin: 1em 0 0 3em;
+}
+
+a.nodecor {
+    text-decoration: none;
+}
+
+span.tab {
+    display: inline-table;
+}
+span.pretab {
+    width: 90px;
+    display: inline-table;
 }
