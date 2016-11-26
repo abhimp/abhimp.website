@@ -20,7 +20,7 @@ header pre {
     font-size: 14px;
 }
 pre#sig {
-    width: 640px;
+    width: 600px;
     display: block;
     left: 50%;
     margin: 10px auto 0 auto;
@@ -31,9 +31,21 @@ pre#sig {
         font-weight: bold;
     }
 }
+
+pre.span {
+    display: inline-block;
+}
+
 header#main a {
     text-decoration: none;
 }
+
+header#main a.title {
+    text-align: center;
+    display: inline-block;
+    width: 800px;
+}
+
 .separator {
     overflow: hidden;
     width: 800px;
@@ -75,6 +87,7 @@ nav {
     width: 800px;
     text-align: center;
     display: block;
+    font-size: 17px;
 }
 nav ul {
     width: 800px;
