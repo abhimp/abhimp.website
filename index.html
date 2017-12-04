@@ -4,20 +4,35 @@
         <meta charset="utf-8" />
         <title>Abhijit Mondal</title>
         <link href="main.css" rel="stylesheet"/>
+        <script type="text/javascript" src="jquery-1.5.min.js"></script>
     </head>
-    </head>
-    <body>   
-        <header id="main">
+    <body> 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log("ready");
+            $("#navigation").empty()
+            $("article header").each(function(index){
+                console.log( index + ": " + $( this ).text().trim() + ": " + $(this).attr("id") );
+                var menu = $("<li></li>").appendTo($("#navigation"))
+                $("<a></a>").attr("href", "#"+$(this).attr("id")).text($( this ).text().trim()).appendTo(menu);
+
+            })
+        })
+    </script>  
+        <div id="header">
             <a href="/" class="title">
-                <pre class="span">            _      _      _  _  _  _   
+                <pre class="span">
+            _      _      _  _  _  _   
      /\    | |    | |    (_)(_)(_)| |  
     /  \   | |__  | |__   _  _  _ | |_ 
    / /\ \  | '_ \ | '_ \ | || || || __|
   / ____ \ | |_) || | | || || || || |_ 
  /_/    \_\|_.__/ |_| |_||_|| ||_| \__|
                            _/ |        
-                          |__/         </pre>
-                <pre class="span">  __  __                    _         _ 
+                          |__/         
+</pre>
+<pre class="span">
+  __  __                    _         _ 
  |  \/  |                  | |       | |
  | \  / |  ___   _ __    __| |  __ _ | |
  | |\/| | / _ \ | '_ \  / _` | / _` || |
@@ -30,7 +45,7 @@
 ===================================================================================================================================================================================================</pre>
             <nav>
 
-                <ul>
+                <ul id="navigation">
                     <li><a href="#introduction">Intro</a></li>
                     <li><a href="#aboutme">About</a></li>
                     <li><a href="#research">Research</a></li>
@@ -38,7 +53,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
         <section>
             <article>
                 <header id="introduction">
@@ -107,7 +122,7 @@
                         </tr>
                         <tr>
                             <td class="tag">email:</td>
-                            <td class="desc"><a href="mailto:abhimondal@iitkgp.ac.in" class="nodecor">abhimondal@iitkgp.ac.in</a></td>
+                            <td class="desc"><a href="#7d7c8face75" id="7d7c8face75">abhimondal [AT] iitkgp [DOT] ac [DOT] in</a></td>
                         </tr>
                         <tr>
                             <td class="tag">facebook:</td>
